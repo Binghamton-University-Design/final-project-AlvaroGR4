@@ -1,0 +1,46 @@
+/*stylesheet*/
+
+/*vars*/
+
+:root {
+  --background-color: #C6C2B6;
+  --body-color: #fff;
+}
+
+body{
+margin: 0;
+color: var(--body-color);
+background: var(--background-color);
+}
+
+#main_container {
+	
+
+}
+
+#wrapper{
+	margin: 0 auto;
+	max-width: 900px;
+	min-height: 800px;
+	padding: 1em;
+	align-self: center;
+	vertical-align: center;
+}
+
+.start{
+	background: teal;
+	position: absolute;
+	width: 20%;
+	height: 5%;
+	bottom:  2%;
+	right: 3%;
+}
+
+.project {
+  diplay:  flex;
+  align-items:  center;
+  height:  100vh;
+}
+.project_inner{
+  position: relative;
+}
