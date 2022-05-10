@@ -1,5 +1,14 @@
 /*stylesheet*/
 
+/* Color Palette 
+
+Cream Color = EDE8D5
+Yellow = EEAD47
+Light Blue = 7F94AF
+Dark Blue = 0D1B3E
+Red = B23B25
+
+
 /*vars*/
 
 :root {
@@ -13,6 +22,95 @@ color: var(--body-color);
 background: var(--background-color);
 }
 
+h1{
+	font-size: 120px;
+	color: #0D1B3E;
+}
+
+h2{
+	color: #0D1B3E;
+	font-size: 35px;
+}
+
+p{
+	color: #0D1B3E;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+h5{
+	text-align: center;
+	padding-top: .2em;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #0D1B3E;
+}
+
+.shadow{
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+/* Animations */
+
+ @keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.spin{
+	transform-origin: center center;
+	animation:spin 10s linear infinite;
+}
+
+@keyframes wobble {
+	
+	25%  { transform: translate(-2px, 20px);}
+	50%  { transform: translate(20px, 40px);}
+	75%  { transform: translate(0px, -10px);}
+	100%{ transform: translate(0,0); }
+}
+
+.wobble{
+	animation:wobble 10s ease infinite;
+}
+
+
+@keyframes cloudmove{
+
+	100%{transform: translate(670px);}
+}
+
+.cloudmove{
+	animation: cloudmove 20s linear infinite;
+}
+
+@keyframes shake{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(20deg);}
+	15%{transform: rotate(-20deg);}
+	20%{transform: rotate(20deg);}
+	25%{transform: rotate(-20deg);}
+	30%{transform: rotate(20deg);}
+	35%{transform: rotate(-20deg);}
+	40%{transform: rotate(20deg);}
+	45%{transform: rotate(-20deg);}
+	50%{transform: rotate(0deg);}
+}
+
+.shake{
+	animation: shake 2s ease-in-out infinite;
+}
+
+
+@keyframes slide{
+	50%{transform: translate(25px);}
+	100%{transform: translate(0px);}
+}
+
+.slide{
+	animation:  slide 2s infinite;
+}
+
 #main_container {
 	
 
@@ -20,27 +118,627 @@ background: var(--background-color);
 
 #wrapper{
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 1200px;
 	min-height: 800px;
 	padding: 1em;
 	align-self: center;
 	vertical-align: center;
 }
 
-.start{
-	background: teal;
+
+
+
+
+
+
+
+
+
+/*Page 1*/
+
+
+
+
+
+
+
+
+
+.project_inner_1{
+	background-color: #EDE8D5;
+  position: relative;
+  width: 100%;
+  height: 91vh;
+  
+}
+
+.pg1bottom{
+background: #0D1B3E;
 	position: absolute;
-	width: 20%;
-	height: 5%;
-	bottom:  2%;
-	right: 3%;
+	width: 100%;
+	height: 33%;
+	bottom:  0%;
+	right: 0%;
+
+}
+
+.h1hover:hover{
+	color: #EEAD47;
+}
+
+.start{
+	background: #7F94AF;
+	position: absolute;
+	width: 29%;
+	height: 6%;
+	bottom:  8%;
+	right: 8.2%;
+	border-radius: 50px;
+}
+.starth:hover{
+	background: #EDE8D5;
+}
+
+.tileflower{
+	position: absolute;
+	width: 29%;
+	height: 6%;
+	bottom:  78%;
+	right: 46%;
+	width: 275px;
+}
+
+.tilebird{
+	position: absolute;
+	width: 29%;
+	height: 6%;
+	bottom:  83.2%;
+	right: 82.9%;
+	width: 200px;
+}
+
+.bottle{
+	position: absolute;
+	width: 29%;
+	height: 6%;
+	bottom:  75%;
+	right: 50%;
+	width: 600px;
 }
 
 .project {
-  diplay:  flex;
+  display:  flex;
   align-items:  center;
   height:  100vh;
 }
-.project_inner{
-  position: relative;
+
+.titletext{
+	position: absolute;
+	width: 29%;
+	height: 6%;
+	bottom:  90%;
+	right: 4%;
+	min-width: 800px;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+/* Transition 1*/
+
+
+
+
+
+
+
+
+
+.tr1bottom{
+	background: #EEAD47;
+	position: absolute;
+	width: 100%;
+	height: 31.6%;
+	bottom:  0%;
+	right: 0%;
+}
+
+.pyramid{
+	position: absolute;
+	bottom: -6%;
+	right: 0%;
+	width: 850px;
+}
+
+.trpulque{
+	position: absolute;
+	bottom: 15%;
+	right: 20%;
+	width: 100px;
+}
+
+.tr1cloud{
+	position: absolute;
+	bottom: 50%;
+	right: 40%;
+	width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Pulque Page */
+
+
+
+
+
+
+
+
+
+.pulquebottom{
+	position: absolute;
+	width: 750px;
+	bottom: 0;
+	right: 0%;
+}
+
+
+.pulquejar{
+
+	position: absolute;
+	width: 500px;
+	bottom: 10%;
+	right: 3%;
+}
+
+.pulqueword{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 70%;
+	left: 10%;
+	top: 10%;
+}
+
+.pulquetxt{
+	background-color: rgba(0,0,0,.4);
+	position: absolute;
+	height: 65%;
+	width: 85%;
+	bottom: 0%;
+}
+
+
+
+
+
+
+
+/* Colonization Page */
+
+
+
+
+
+
+.colword{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 70%;
+	left: 5%;
+	top: 10%;
+}
+
+.coltxt{
+	background-color: rgba(0,0,0,.4);
+	position: absolute;
+	height: 65%;
+	width: 50%;
+	bottom: 0%;
+	left: 5%;
+}
+
+.coltxt2{
+	background-color: rgba(0,0,0,.4);
+	position: absolute;
+	width: 250px;
+	top: 7%;
+	left: 5%;
+}
+
+.coltxt3{
+	background-color: rgba(0,0,0,.4);
+	position: absolute;
+	width: 250px;
+	bottom: 16%;
+	right: 5%;
+}
+
+
+.agbarrel{
+	position: absolute;
+	width: 500px;
+	bottom: 0%;
+
+}
+
+.empty_bottle{
+	position: absolute;
+	width: 500px;
+	top: -10%;
+	right: 5%;
+}
+
+
+.colcircle1{
+	background: #B23B25;
+	width: 425px;
+	height: 425px;
+	border-radius: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+}
+
+.colcircle2{
+	background: #B23B25;
+	width: 425px;
+	height: 425px;
+	border-radius: 100%;
+	position: absolute;
+	right: 22%;
+	top: 45%;
+}
+
+.colelipse1{
+	background: #EEAD47;
+	width: 350px;
+	height: 75px;
+	border-radius: 100%;
+	position: absolute;
+	right: 24%;
+	top: 29%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.colelipse2{
+	background: #EEAD47;
+	width: 350px;
+	height: 75px;
+	border-radius: 100%;
+	position: absolute;
+	right: 3%;
+	top: 72%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.drop{
+	position: absolute;
+	width: 50px;
+	left: 13%;
+	bottom: 17%;
+
+}
+
+.elhover: hover{
+	color: red ;
+}
+
+
+
+
+
+
+
+/* Tequila Jalisco Pg*/
+
+.circle_clip{
+	clip-path: circle(220px at center);
+}
+
+
+.map{
+
+	position: absolute;
+	width: 500px;
+	bottom: 15%;
+	right: 3%;
+}
+
+
+.pin{
+	position: absolute;
+	width: 75px;
+	bottom: 50%;
+	right: 58%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Cuervo Page*/
+
+.cuervoword{
+	position: absolute;
+	display: flex;
+	justify-content: left;
+	height: 70%;
+	width: 75%;
+	left: 5%;
+	top: 5%;
+}
+
+.cuervotxt{
+	background-color: rgba(0,0,0,.4);
+	height: 50%;
+	width: 75%;
+	top: 55%;
+	position: absolute;
+	column-count: 2;
+	column-fill: auto;
+}
+
+.barrels1{
+	position: absolute;
+	width: 700px;
+	right: 0%;
+	top: 0%;
+}
+
+
+.barrelshadow{
+	position: absolute;
+	bottom: 8%;
+	right: 0%;
+	background: rgba(13, 27, 62, .5);
+	width: 700px;
+	height: 100px;
+	border-radius: 100% 0 0 100%;
+}
+
+
+
+
+
+
+
+
+/*Modern Tequila*/
+
+.topright{
+	position: absolute;
+	border-radius: 0 0 0 100%;
+	top: 0%;
+	right: 0%;
+	width: 700px;
+	height: 700px;
+	background-color: indianred;
+	overflow: hidden;
+}
+
+.modimg{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+
+}
+
+
+.modh1{
+	background-color:#0D1B3E;
+	border-radius: 50px;
+	position: absolute;
+	display: flex;
+	top: 5%;
+	left: 5%;
+	height: 200px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.modtxt{
+	position: absolute;
+	width: 25%;
+	background-color: rgba(0, 0, 0, .3);
+	left: 15%;
+	top: 31%;
+}
+
+
+
+
+/* Timeline Design */
+
+
+
+
+
+
+
+
+
+
+
+.timecontainer{
+	position: absolute;
+	bottom: 0%;
+	margin-right: auto;
+	margin-left: auto;
+	align-items	: center;
+	width: 100%;
+	height: 12.8%;
+}
+
+.timecontainer_inner{
+	
+	margin-right: auto;
+	margin-left: auto;
+	align-content	: center;
+	width: 80%;
+	height: 100%;
+}
+
+.elementcontainer{
+	margin-right: auto;
+	margin-left: auto;
+	align-content	: center;
+	width: 64.25%;
+	height: 100%;
+}
+
+
+.timeline {
+-webkit-font-smoothing: antialiased;
+}
+
+.timeline ul {
+display: flex;
+justify-content: center;
+vertical-align: center;
+list-style: none;
+list-style-type: none;
+padding: 0;
+margin: 0 auto;
+overflow: auto;
+width: 100%;
+
+}
+
+.timeline li {
+
+float: left;
+margin: auto;
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+#active{
+border-color: #B23B25;
+}
+
+.timeline li a {
+background: #EEAD47;
+border-style: solid;
+border-color: #EDE8D5;
+border-width: 5px;
+color: white;
+font-weight: normal;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;	
+width: 100px;
+height: 100px;
+transition: all 0.2s ease-in-out;
+box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.04);
+}
+
+.leftarrow{
+	position: absolute;
+	left: 14%;
+	bottom: 1.5%;
+	width: 125px;
+}
+
+@keyframes lhover{
+	50%{transform: translate(-25px);}
+
+}
+.lhover:hover {
+	animation: lhover 2s ease-in-out 3;
+}
+
+
+
+.rightarrow{
+	position: absolute;
+	left: 75%;
+	bottom: 1.5%;
+	width: 125px;
+}
+
+@keyframes rhover{
+	50%{transform: translate(25px);}
+
+}
+.rhover:hover {
+	animation: rhover 2s ease-in-out 3;
+}
+
+
+.timeline li:hover a {
+background: #7F94AF;
+}
+
+
+.icon{
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+section{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #7F94AF;
+
+}
+
+section h1{
+	color: #EDE8D5;
+	
+
+}
+
+section svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
