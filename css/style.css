@@ -315,7 +315,6 @@ background: #0D1B3E;
 }
 
 .pulquetxt{
-	background-color: rgba(0,0,0,.4);
 	position: absolute;
 	height: 65%;
 	width: 85%;
@@ -345,7 +344,6 @@ background: #0D1B3E;
 }
 
 .coltxt{
-	background-color: rgba(0,0,0,.4);
 	position: absolute;
 	height: 65%;
 	width: 50%;
@@ -354,7 +352,6 @@ background: #0D1B3E;
 }
 
 .coltxt2{
-	background-color: rgba(0,0,0,.4);
 	position: absolute;
 	width: 250px;
 	top: 7%;
@@ -362,7 +359,6 @@ background: #0D1B3E;
 }
 
 .coltxt3{
-	background-color: rgba(0,0,0,.4);
 	position: absolute;
 	width: 250px;
 	bottom: 16%;
@@ -499,7 +495,6 @@ background: #0D1B3E;
 }
 
 .cuervotxt{
-	background-color: rgba(0,0,0,.4);
 	height: 50%;
 	width: 75%;
 	top: 55%;
@@ -571,7 +566,6 @@ background: #0D1B3E;
 .modtxt{
 	position: absolute;
 	width: 25%;
-	background-color: rgba(0, 0, 0, .3);
 	left: 15%;
 	top: 31%;
 }
